@@ -28,7 +28,7 @@ jobs:
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
               with:
-                  deploy_key: ${{ secrets.ACTIONSDEPLOYKEY }}
+                  deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
                   EXTERNAL_REPOSITORY: sanbeiicecream/sanbeiicecream.github.io
                   PUBLISH_BRANCH: main
                   PUBLISH_DIR: ./public
