@@ -1,7 +1,10 @@
 ---
 title: "hugo使用PaperMod搭建主题静搭建静态博客"
 date: 2023-02-16T02:51:14+08:00
-draft: false
+draft: 
+category: 
+tags: ['建站']
+series: 
 ---
 
 ## 先动起来

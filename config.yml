@@ -23,7 +23,7 @@ languages:
     weight: 1
     taxonomies:
       category: categories
-      tag: tagsPermalink
+      tag: tags 
       series: series
     menu:
       main:
