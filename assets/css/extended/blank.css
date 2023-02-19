@@ -105,3 +105,10 @@
   cursor: pointer;
   user-select: none;
 }
+
+.list-container{
+  display: flex;
+}
+.list-pic{
+  width: 38%;
+}
