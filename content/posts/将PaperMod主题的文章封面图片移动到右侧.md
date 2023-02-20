@@ -12,7 +12,7 @@ cover:
 ---
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230219175857.png)
 
-上面图片占用的面积太大了，需要调整一下放在右侧边
+上面图片占用的面积太大了，需要调整一下放在右侧
 修改文件layouts => _default => list.html
 定位到关键代码
 ``` html
@@ -60,7 +60,7 @@ cover:
       {{- end }}
       <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
     </div>
-    <div class="list-pic">
+    <div>
       {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
       {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
     </div>
@@ -68,12 +68,20 @@ cover:
 ```
 在blank.css中添加
 ``` css
-  .list-container{
-    display: flex;
-  }
-  .list-pic{
-    width: 38%;
-  }
+.list-container{
+
+  display: flex;
+  align-items: center;
+
+}
+
+.list-container > div:nth-child(1){
+  max-width: 60%;
+}
+
+.list-container > div:nth-child(2){
+  width: 38%;
+}
 ```
 完成！
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230219175939.png)

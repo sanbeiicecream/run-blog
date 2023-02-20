@@ -108,7 +108,11 @@
 
 .list-container{
   display: flex;
+  align-items: center;
 }
-.list-pic{
+.list-container > div:nth-child(1){
+  max-width: 60%;
+}
+.list-container > div:nth-child(2){
   width: 38%;
 }
