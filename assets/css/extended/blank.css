@@ -21,8 +21,9 @@
   height: 100%;
   border-right: 1px solid var(--border);
   left: calc((var(--toc-width) + var(--gap)) * -1);
-  top: calc(var(--gap) * 2);
+  top: calc(var(--gap) + 11px);
   width: var(--toc-width);
+  margin-left: 24px;
 }
 
 .wide .toc {
@@ -82,9 +83,6 @@
 
 .toc li {
   list-style: none;
-  line-height: 0.8em;
-  padding-bottom: 5px;
-  margin-left: 1em;
 }
 
 .toc li a {
@@ -105,14 +103,14 @@
   cursor: pointer;
   user-select: none;
 }
+.toc > details > .inner > ul{
+  margin-left: 1em;
+}
 
 .list-container{
   display: flex;
   align-items: center;
 }
 .list-container > div:nth-child(1){
-  max-width: 60%;
-}
-.list-container > div:nth-child(2){
-  width: 38%;
+  min-width: 60%;
 }
