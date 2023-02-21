@@ -37,10 +37,9 @@ cover:
 找到main.js中关键代码片段
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230220195907.png)
 
-进行修改
+加这几行代码，完成！！！easy
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230220195921.png)
 
-加这几行代码，完成！！！easy
 在模板中`date: "<% tp.date.now('iso') %>"`
 重启obsidian，试一试是ok的
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230220195937.png)

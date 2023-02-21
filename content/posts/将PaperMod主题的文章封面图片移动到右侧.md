@@ -11,7 +11,7 @@ cover:
     caption: '封面标题'
 ---
 ![image.png](https://image.jysgdyc.top:443/blog-images/20230219175857.png)
-
+**修改文件都是用的同级覆盖方式，没有修改themes里面的文件**
 上面图片占用的面积太大了，需要调整一下放在右侧
 修改文件layouts => _default => list.html
 定位到关键代码
@@ -69,18 +69,13 @@ cover:
 在blank.css中添加
 ``` css
 .list-container{
-
   display: flex;
   align-items: center;
 
 }
 
 .list-container > div:nth-child(1){
-  max-width: 60%;
-}
-
-.list-container > div:nth-child(2){
-  width: 38%;
+  min-width: 60%;
 }
 ```
 完成！
