@@ -222,7 +222,7 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-
+    
 privacy:
   vimeo:
     disabled: false
