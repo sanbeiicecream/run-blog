@@ -115,6 +115,12 @@
   min-width: 60%;
 }
 
+code{
+  font-family: 'Fira Code', Consolas, 'Courier New', monospace;
+  font-size: 16px;
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
 
 /* 图片显示 */
 img[loading="lazy"]{
