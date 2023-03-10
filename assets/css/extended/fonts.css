@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FiraCode';
+  src: local('Fira Code'), url('/fonts/FiraCode-Bold.woff2');
+  
+}
+
+@font-face {
+  font-family: 'a丸';
+  src: url('/fonts/yezi.ttf');
+}

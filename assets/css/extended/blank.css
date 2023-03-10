@@ -1,3 +1,16 @@
+/* reset */
+body{
+  font-family: 'a丸';
+}
+
+ul{
+  list-style-type: none;
+}
+
+.post-content ol, .post-content ul{
+  padding-inline-start: initial;
+}
+
 .first-entry,.home-info{
   min-height: 120px;
 }
@@ -116,10 +129,10 @@
 }
 
 code{
-  font-family: 'Fira Code', Consolas, 'Courier New', monospace;
+  font-family: 'FiraCode', Consolas, 'Courier New', monospace;
   font-size: 16px;
-  white-space: pre-wrap !important;
-  word-break: break-all !important;
+  /* white-space: pre-wrap !important;
+  word-break: break-all !important; */
 }
 
 /* 图片显示 */

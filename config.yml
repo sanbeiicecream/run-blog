@@ -135,10 +135,11 @@ params:
   DateFormat: '2006年1月2日'
   ShowWordCount: true
   # author: ["Me", "You"] # multiple authors
+  # disableHLJS: false
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -190,7 +191,7 @@ params:
   #         SiteVerificationTag: "XYZabc"
 
   assets:
-    disableHLJS: true
+    disableHLJS: false
   #     favicon: "<link / abs url>"
   #     favicon16x16: "<link / abs url>"
   #     favicon32x32: "<link / abs url>"
@@ -214,35 +215,35 @@ params:
 markup:
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: false
   highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    noClasses: true
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: base16-snazzy
     
-privacy:
-  vimeo:
-    disabled: false
-    simple: true
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
 
-  twitter:
-    disabled: false
-    enableDNT: true
-    simple: true
+#   twitter:
+#     disabled: false
+#     enableDNT: true
+#     simple: true
 
-  instagram:
-    disabled: false
-    simple: true
+#   instagram:
+#     disabled: false
+#     simple: true
 
-  youtube:
-    disabled: false
-    privacyEnhanced: true
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true
 
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
+# services:
+#   instagram:
+#     disableInlineCSS: true
+#   twitter:
+#     disableInlineCSS: true
