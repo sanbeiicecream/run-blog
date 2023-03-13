@@ -1,5 +1,5 @@
 ---
-title: "hugo使用PaperMod搭建主题静搭建静态博客"
+title: "hugo使用PaperMod主题搭建静态博客"
 date: 2023-02-16T02:51:14+08:00
 draft: 
 category: 
