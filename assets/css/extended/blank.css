@@ -1,17 +1,19 @@
 /* reset */
-body{
-  font-family: 'a丸';
-}
+/* body {
 
-ul{
+} */
+
+ul {
   list-style-type: none;
 }
 
-.post-content ol, .post-content ul{
+.post-content ol,
+.post-content ul {
   padding-inline-start: initial;
 }
 
-.first-entry,.home-info{
+.first-entry,
+.home-info {
   min-height: 120px;
 }
 
@@ -116,19 +118,21 @@ ul{
   cursor: pointer;
   user-select: none;
 }
-.toc > details > .inner > ul{
+
+.toc>details>.inner>ul {
   margin-left: 1em;
 }
 
-.list-container{
+.list-container {
   display: flex;
   align-items: center;
 }
-.list-container > div:nth-child(1){
+
+.list-container>div:nth-child(1) {
   min-width: 60%;
 }
 
-code{
+code {
   font-family: 'FiraCode', Consolas, 'Courier New', monospace;
   font-size: 16px;
   /* white-space: pre-wrap !important;
@@ -136,7 +140,7 @@ code{
 }
 
 /* 图片显示 */
-img[loading="lazy"]{
+img[loading="lazy"] {
   display: inline;
   width: initial;
   max-height: 300px;
