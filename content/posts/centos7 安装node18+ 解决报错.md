@@ -1,3 +1,15 @@
+---
+title: "centos7 安装node18+ 解决报错"
+date: "2023-06-18T17:40:01.850Z"
+draft: 
+category: [] 
+tags: [centos, node]
+series: []
+cover: 
+    image: ''
+    alt: ''
+    caption: ''
+---
 最近有个库需要使用node18+版本，所以在node上安装了nvm  
 https://github.com/nvm-sh/nvm
 ```shell
