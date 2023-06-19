@@ -23,7 +23,7 @@ languages:
     weight: 1
     taxonomies:
       category: categories
-      tag: tags 
+      tag: tags
       series: series
     menu:
       main:
@@ -31,13 +31,13 @@ languages:
           url: archives
           weight: 5
         - name: Search
-          url: search/
+          url: search
           weight: 10
         - name: Tags
-          url: tags/
+          url: tags
           weight: 10
         - name: About
-          url: about/
+          url: about
           weight: 11
         # - name: WiKi
         #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
@@ -170,7 +170,7 @@ params:
       缘，妙不可言！
   socialIcons:
     - name: github
-      url: 'https://github.com/adityatelange/hugo-PaperMod'
+      url: 'https://github.com/sanbeiicecream'
     - name: KoFi
       url: 'https://ko-fi.com/adityatelange'
     - name: Rss
@@ -223,7 +223,6 @@ markup:
     guessSyntax: true
     lineNos: true
     style: base16-snazzy
-    
 # privacy:
 #   vimeo:
 #     disabled: false
