@@ -171,8 +171,8 @@ params:
   socialIcons:
     - name: github
       url: 'https://github.com/sanbeiicecream'
-    - name: KoFi
-      url: 'https://ko-fi.com/adityatelange'
+    # - name: KoFi
+    #   url: 'https://ko-fi.com/adityatelange'
     - name: Rss
       url: 'index.xml'
 
