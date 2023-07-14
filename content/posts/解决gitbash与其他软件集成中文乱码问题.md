@@ -51,3 +51,22 @@ cover:
   "terminal.external.windowsExec": "%LocalAppData%\\Microsoft\\WindowsApps\\wt.exe",
 }
 ```
+### 缺点
+第一个终端打开后，后续终端打开的路径默认是第一个打开的路径，原因是目前vscode无法指定打开外部终端的参数
+
+---
+更新 2023-07-14 22-56  
+### 使用gitbash打开终端
+
+vscode 配置  
+```json
+{
+  "terminal.integrated.defaultProfile.windows": "gitBash",
+  "terminal.explorerKind": "external",
+  "terminal.external.windowsExec": <git-bash路径>,
+}
+
+```
+使用快捷键可以打开gitbash，然后执行wt命令就可以直接打开终端了，这下每个vscode都能打开独立的终端不会存在路径不对的问题  
+![image.png](https://image.jysgdyc.top:443/blog/20230714230208.png)
+
