@@ -43,6 +43,3 @@ date
 ![image.png](https://image.jysgdyc.top:443/blog/20230628103616.png)
 
 需要给账号设置桶权限"s3: GetBucketLocation"    
-
-
-
