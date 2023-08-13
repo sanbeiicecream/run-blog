@@ -1,0 +1,23 @@
+.terms-tags li {
+  display: inline-block;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.terms-tags a {
+  display: block;
+  padding: 3px 10px;
+  background: transparent;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.terms-tags a:active {
+  background: var(--tertiary);
+  transform: scale(0.98);
+}
+
+.terms-tags a:hover {
+  background-color: #cce0ff;
+  color: #333;
+}
