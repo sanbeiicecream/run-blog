@@ -32,8 +32,10 @@ ln -s /var/lib/snapd/snap /snap
 snap install core
 snap refresh core
 
-
 # 安装certbot
+snap install --classic certbot
+
+ln -s /snap/bin/certbot /usr/bin/certbot
 
 # 验证方式
 # https://letsencrypt.org/zh-cn/docs/challenge-types/
