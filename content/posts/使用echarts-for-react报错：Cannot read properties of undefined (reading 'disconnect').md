@@ -3,7 +3,7 @@ title: "使用echarts-for-react报错：Cannot read properties of undefined (rea
 date: "2023-08-30T08:14:35.153Z"
 draft: 
 category: [] 
-tags: []
+tags: [Web]
 series: []
 cover: 
     image: ''
@@ -107,7 +107,7 @@ export default class EchartsReact extends EchartsReactCore {
 
 为什么还没渲染完成就卸载组件了？这就是导致报错的原因  
 既然是在echats获取实例的时候报错了，这很大程度可能是因为echats内部导致的报错  
-查看echarts-for-react的packge.json包  
+查看echarts-for-react的packagse.json包  
 ![image.png](https://image.jysgdyc.top:443/blog/20230830162943.png)
 
 发现echarts-for-react 2.x版本只支持到4.x版本  
