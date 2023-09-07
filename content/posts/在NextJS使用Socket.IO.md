@@ -26,7 +26,8 @@ export async function GET(request: Request, res: Response) {
 那么就需要使用**page router**，处理socket连接，使用page router可以获取到完整的req与res  
 ![image.png](https://image.jysgdyc.top:443/blog/20230904115535.png)
 
-## [WebSocket](https://zh.wikipedia.org/wiki/WebSocket)
+## WebSocket
+[wiki](https://zh.wikipedia.org/wiki/WebSocket)  
 WebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信，位于OSI模型的应用层。  
 WebSocket使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在WebSocket API中，浏览器和服务器只需要完成一次握手，两者之间就可以建立持久性的连接，并进行双向数据传输。  
 为了实现兼容性，WebSocket握手使用HTTP Upgrade从HTTP协议更改为WebSocket协议。  
@@ -69,8 +70,8 @@ Origin字段是必须的。如果缺少origin字段，WebSocket服务器需要�
 可以看出握手协议的时候需要计算出Sec-WebSocket-Accept的值，所以一般是直接使用第三方库
 
 
-
-## [Socket.IO](https://socket.io/zh-CN/)
+## Socket.IO
+[官网](https://socket.io/zh-CN/)  
 
 ![image.png](https://image.jysgdyc.top:443/blog/20230904115848.png)
 

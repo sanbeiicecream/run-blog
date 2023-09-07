@@ -12,6 +12,10 @@
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
+{{- if .Params.last -}}
+{{- $scratch.Add "meta" (slice (printf "最后更新：<span title='%s'>%s</span>" (.Params.last) (.Params.last | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- end }}
+
 {{- with (partial "author.html" .) }}
 {{- $scratch.Add "meta" (slice .) }}
 {{- end }}
