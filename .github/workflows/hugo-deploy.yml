@@ -21,10 +21,12 @@ jobs:
               uses: peaceiris/actions-hugo@v2
               with:
                   hugo-version: "latest"
-
+            - name: submodule update
+              run: git submodule update
+              
             - name: Build Web
               run: hugo
-
+              
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
               with:
