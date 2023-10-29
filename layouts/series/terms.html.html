@@ -1,0 +1,32 @@
+{{- define "main" }}
+{{- $OutParams := .Params }}
+{{- if .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+<ul class="terms-tags-series">
+  {{- $type := .Type }}
+  {{- range $key, $value := .Data.Terms.Alphabetical }}
+  {{- $name := .Name }}
+  {{- $count := .Count }}
+  {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Name }}
+      <span>
+        {{ $count }}篇
+        更新时间：{{ .Date.Format "2006-01-02" }}
+      </span>
+    </a>
+    <div>{{ index $OutParams $name }}</div>
+  </li>
+  {{- end }}
+  {{- end }}
+</ul>
+
+{{- end }}{{/* end main */ -}}

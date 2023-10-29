@@ -21,3 +21,29 @@
   background-color: #cce0ff;
   color: #333;
 }
+
+.terms-tags-series li {
+  background-color: var(--entry);
+  border-radius: var(--radius);
+  width: 100%;
+  position: relative;
+}
+
+.terms-tags-series div {
+  padding: 0 1em .5em;
+}
+
+.terms-tags-series li span {
+  position: absolute;
+  display: inline-block;
+  top: var(50% - 1em);
+  right: 1em;
+  transform: translateY(var(-50% + 1em));
+}
+
+.terms-tags-series a {
+  width: 100%;
+  display: inline-block;
+  background-color: transparent;
+  padding: 1em;
+}
