@@ -23,7 +23,7 @@
         更新时间：{{ .Date.Format "2006-01-02" }}
       </span>
     </a>
-    <div>{{ index $OutParams $name }}</div>
+    <div class="terms-tags-introduce">{{ index $OutParams $name | safeHTML}}</div>
   </li>
   {{- end }}
   {{- end }}
