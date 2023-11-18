@@ -21,18 +21,19 @@ jobs:
               uses: peaceiris/actions-hugo@v2
               with:
                   hugo-version: "0.110.0"
+                  extended: true
             - name: submodule update
               run: git submodule update
               
             - name: Build Web
-              run: hugo
+              run: hugo --minify
               
             - name: Create dist directory
               run: mkdir -p /home/runner/work/run-blog/run-blog/dist
             - name: Set baseURL environment variable
               run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
             - name: Build upload file
-              run: hugo --baseURL=$BASEURL --source dist
+              run: hugo --minify --baseURL=$BASEURL --source dist
 
 
                 
