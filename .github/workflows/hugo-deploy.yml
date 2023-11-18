@@ -42,5 +42,5 @@ jobs:
                 port: ${{ secrets.KR_SSH_PORT }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
-                source: "./public"
-                target: "/usr/share/blog"
+                source: "./public/*"
+                target: "/usr/share/blog/"
