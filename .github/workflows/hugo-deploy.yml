@@ -35,3 +35,11 @@ jobs:
                   PUBLISH_BRANCH: main
                   PUBLISH_DIR: ./public
                   commit_message: ${{ github.event.head_commit.message }}
+            - name: Copy files to server
+              uses: appleboy/scp-action@master
+              with:
+                host: ${{ secrets.SERVER_HOST }}
+                username: ${{ secrets.SERVER_USERNAME }}
+                key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
+                source: "./public"
+                target: "/usr/share/blog"
