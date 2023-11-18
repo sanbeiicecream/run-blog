@@ -27,6 +27,9 @@ jobs:
             - name: Build Web
               run: hugo
               
+            - name: Build upload file
+              run: hugo --source dist --baseURL="https://blog.jysgdyc.com/"
+              
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
               with:
@@ -42,5 +45,5 @@ jobs:
                 port: ${{ secrets.KR_SSH_PORT }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
-                source: "./public/*"
-                target: "/usr/share/blog/"
+                source: ./dist/*
+                target: /usr/share/blog/
