@@ -29,8 +29,10 @@ jobs:
               
             - name: Create dist directory
               run: mkdir -p /home/runner/work/run-blog/run-blog/dist
+            - name: Set baseURL environment variable
+              run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
             - name: Build upload file
-              run: hugo --config config.yml --baseURL="https://blog.jysgdyc.com" --source dist
+              run: hugo --baseURL=$BASEURL --source dist
 
 
                 
