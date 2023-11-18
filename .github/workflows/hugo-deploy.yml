@@ -27,9 +27,13 @@ jobs:
             - name: Build Web
               run: hugo
               
+            - name: Create dist directory
+              run: mkdir -p /home/runner/work/run-blog/run-blog/dist
             - name: Build upload file
               run: hugo --source dist --baseURL="https://blog.jysgdyc.com/"
-              
+
+
+                
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
               with:
