@@ -30,7 +30,7 @@ jobs:
             - name: Create dist directory
               run: mkdir -p /home/runner/work/run-blog/run-blog/dist
             - name: Build upload file
-              run: hugo  --baseURL="https://blog.jysgdyc.com" --source dist
+              run: hugo --config config.yml --baseURL="https://blog.jysgdyc.com" --source dist
 
 
                 
