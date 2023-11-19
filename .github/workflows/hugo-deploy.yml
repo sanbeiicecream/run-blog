@@ -16,40 +16,40 @@ jobs:
               with:
                   submodules: true
                   fetch-depth: 0
-
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
-              with:
-                  hugo-version: "0.110.0"
-                  extended: true
-            - name: submodule update
-              run: git submodule update
+            - name: Check Hugo version
+              run: hugo version
+            # - name: Setup Hugo
+            #   uses: peaceiris/actions-hugo@v2
+            #   with:
+            #       hugo-version: "0.110.0"
+            # - name: submodule update
+            #   run: git submodule update
               
-            - name: Build Web
-              run: hugo --minify
+            # - name: Build Web
+            #   run: hugo --minify
               
-            - name: Create dist directory
-              run: mkdir -p /home/runner/work/run-blog/run-blog/dist
+            # - name: Create dist directory
+            #   run: mkdir -p /home/runner/work/run-blog/run-blog/dist
             # - name: Set baseURL environment variable
-              # run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
-            - name: Build upload file
-              run: hugo --source dist
+            #   run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
+            # - name: Build upload file
+            #   run: hugo --source dist
 
                 
-            - name: Deploy Web
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  deploy_key: ${{ secrets.ACTIONSDEPLOYKEY }}
-                  EXTERNAL_REPOSITORY: sanbeiicecream/sanbeiicecream.github.io
-                  PUBLISH_BRANCH: main
-                  PUBLISH_DIR: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
-            - name: Copy files to server
-              uses: appleboy/scp-action@master
-              with:
-                host: ${{ secrets.SERVER_HOST }}
-                port: ${{ secrets.KR_SSH_PORT }}
-                username: ${{ secrets.SERVER_USERNAME }}
-                key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
-                source: ./dist/*
-                target: /usr/share/blog/
+            # - name: Deploy Web
+            #   uses: peaceiris/actions-gh-pages@v3
+            #   with:
+            #       deploy_key: ${{ secrets.ACTIONSDEPLOYKEY }}
+            #       EXTERNAL_REPOSITORY: sanbeiicecream/sanbeiicecream.github.io
+            #       PUBLISH_BRANCH: main
+            #       PUBLISH_DIR: ./public
+            #       commit_message: ${{ github.event.head_commit.message }}
+            # - name: Copy files to server
+            #   uses: appleboy/scp-action@master
+            #   with:
+            #     host: ${{ secrets.SERVER_HOST }}
+            #     port: ${{ secrets.KR_SSH_PORT }}
+            #     username: ${{ secrets.SERVER_USERNAME }}
+            #     key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
+            #     source: ./dist/*
+            #     target: /usr/share/blog/
