@@ -33,8 +33,7 @@ jobs:
             # - name: Set baseURL environment variable
               # run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
             - name: Build upload file
-              run: hugo --minify --source dist
-
+              run: hugo --source dist
 
                 
             - name: Deploy Web
