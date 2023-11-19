@@ -27,14 +27,14 @@ jobs:
               run: git submodule update
               
             - name: Build Web
-              run: hugo --minify
+              run: hugo --source dist
               
             - name: Create dist directory
               run: mkdir -p /home/runner/work/run-blog/run-blog/dist
             # - name: Set baseURL environment variable
             #   run: echo "BASEURL=https://blog.jysgdyc.com" >> $GITHUB_ENV
             - name: Build upload file
-              run: hugo --source dist
+              run: hugo --source dist 
 
                 
             - name: Deploy Web
