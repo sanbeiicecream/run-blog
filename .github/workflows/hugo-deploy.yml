@@ -53,3 +53,5 @@ jobs:
                 key: ${{ secrets.KR_SSH_PRIVATE_KEY }}
                 source: ./dist/*
                 target: /usr/share/blog/
+                overwrite: true
+                strip_components: 1
